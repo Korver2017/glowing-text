@@ -10,34 +10,7 @@ h1 span {
   font-size: 10rem;
   font-family: 'Bad Script', cursive;
   color: #111;
-  text-shadow:  0 0 10px #00b3ff,
-                0 0 20px #00b3ff,
-                0 0 40px #00b3ff,
-                0 0 80px #00b3ff,
-                0 0 120px #00b3ff,
-                0 0 200px #00b3ff,
-                0 0 300px #00b3ff,
-                0 0 400px #00b3ff;
   animation: glowing 4s linear infinite;
-}
-
-@keyframes glowing {
-  0%, 100% {
-    color: #fff;
-    filter: blur(2px);
-    text-shadow: 0 0 10px #00b3ff,
-                 0 0 20px #00b3ff,
-                 0 0 40px #00b3ff,
-                 0 0 80px #00b3ff,
-                 0 0 120px #00b3ff,
-                 0 0 200px #00b3ff,
-                 0 0 300px #00b3ff,
-                 0 0 400px #00b3ff;
-  } 2.5%, 97.5% {
-    color: #111;
-    text-shadow: none;
-    filter: blur(0px);
-  }
 }
 
 h1 span:nth-child(1){
@@ -62,4 +35,23 @@ h1 span:nth-child(5){
 
 h1 span:nth-child(6){
   animation-delay: 2.5s;
+}
+
+@keyframes glowing {
+  0%, 100% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00b3ff,
+                 0 0 20px #00b3ff,
+                 0 0 40px #00b3ff,
+                 0 0 80px #00b3ff,
+                 0 0 120px #00b3ff,
+                 0 0 200px #00b3ff,
+                 0 0 300px #00b3ff,
+                 0 0 400px #00b3ff;
+  } 2.5%, 97.5% {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
 }
